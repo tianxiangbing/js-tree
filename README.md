@@ -3,6 +3,7 @@ js树状折叠插件,主要实现树状结构的展示效果，附加搜索功�
 
 ![js-tree-search-demo](example/demo.gif)
 
+[demo演示](https://tianxiangbing.github.io/js-tree/example/index.html)
 # npm 
     install --save js-tree-search
 
