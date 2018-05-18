@@ -44,4 +44,12 @@ let data = [
         ]
     }
 ]
-jsTree.init({ data: data, childrenField: "child", value: "id", text: "text" });
+jsTree.init({ data: data, searchInput:$('#txt_seach'), childrenField: "child", value: "id", text: "text" ,clickCallback:(e)=>{
+    console.log(e)
+}});
+$('#openAll').click(function(){
+    jsTree.openAll();
+})
+$('#closeAll').click(function(){
+    jsTree.closeAll();
+})

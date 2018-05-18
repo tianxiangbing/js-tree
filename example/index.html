@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JsTree 测试例子</title>
-   <link rel="stylesheet" href="../src/index.css">
+   <link rel="stylesheet" href="../index.css">
+   <style>
+       body{
+           background-color:#eee;
+       }
+       #container{
+           width:300px;
+           border:1px solid #ccc;
+           margin:10px;
+           padding:10px;
+           background:#dedede;
+           height: 100px;
+           overflow: auto;
+       }
+   </style>
 </head>
 
 <body>
-    <div class="jiao"></div>
-    <div class="jiao2"></div>
     <div>
         <div>
-            <input type="text" id="txt_seach">
+            <input type="text" id="txt_seach" placeholder="输入搜索内容"> <button id="openAll">全部展开</button><button id="closeAll">全部收起</button>
         </div>
         <div id="container">
 
