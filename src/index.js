@@ -2,10 +2,10 @@
  * Created with Visual Studio Code.
  * github: https://github.com/tianxiangbing/js-tree
  * User: 田想兵
- * Date: 2018-05-08
+ * Date: 2018-05-18
  * Time: 20:00:00
  * Contact: 55342775@qq.com
- * desc: 倒计时
+ * desc: js搜索树
  * 请使用https://github.com/tianxiangbing/js-tree 上的代码
  * npm install js-tree-search --save
  */
