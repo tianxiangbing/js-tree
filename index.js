@@ -52,6 +52,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _extends(this, { data: {}, isRowHandle: false, iconOpen: '<i class="js-tree-open"></i>', iconClose: '<i class="js-tree-close"></i>', isOpenAll: false, text: undefined, value: undefined, childrenField: 'children', searchInput: undefined, formatItem: undefined, clickCallback: function clickCallback() {}, openCallback: function openCallback() {}, closeCallback: function closeCallback() {} }, _extends({}, args));
                 this.filterColumn = [this.value, this.text];
                 this.show();
+                this.bindEvent();
             }
         }, {
             key: 'show',
@@ -60,7 +61,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 this.level = 0;
                 var _html = this.format(this.data);
                 $(this.container).html('<div class="js-tree-container">' + _html + '</div>');
-                this.bindEvent();
             }
         }, {
             key: 'bindEvent',

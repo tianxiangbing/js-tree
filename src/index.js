@@ -35,13 +35,13 @@
             Object.assign(this, { data: {}, isRowHandle: false, iconOpen: '<i class="js-tree-open"></i>', iconClose: '<i class="js-tree-close"></i>', isOpenAll: false, text: undefined, value: undefined, childrenField: 'children', searchInput: undefined, formatItem: undefined, clickCallback: () => { }, openCallback: () => { }, closeCallback: () => { } }, { ...args });
             this.filterColumn = [this.value, this.text];
             this.show();
+            this.bindEvent();
         }
         show() {
             this.defaultIcon = this.isOpenAll ? this.iconOpen : this.iconClose;
             this.level = 0;
             let _html = this.format(this.data)
             $(this.container).html(`<div class="js-tree-container">${_html}</div>`);
-            this.bindEvent();
         }
         bindEvent() {
             $(this.container).on('click', 'li', e => {

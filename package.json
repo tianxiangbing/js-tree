@@ -1,6 +1,6 @@
 {
   "name": "js-tree-search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "js tree search,jquery plugin tree",
   "main": "index.js",
   "scripts": {
